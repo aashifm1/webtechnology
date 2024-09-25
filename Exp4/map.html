@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Web Page for Maps</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-image: url('https://i.pinimg.com/736x/3e/eb/5d/3eeb5dc79c11924292abdd591df0e9de.jpg');
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start; 
+      position: relative;
+      background-size: 5%; 
+      background-position: center top; 
+      background-repeat: no-repeat;
+    }
+    h1 {
+      margin: 0;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      font-size: 3em;
+      width: 100%;
+      text-align: center;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    .map-container {
+      position: relative;
+      width: 80%;
+      margin-top: 100px; 
+    }
+    .map-container img {
+      width: 100%;
+    }
+    .location {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+    .location:hover {
+      transform: scale(1.5);
+      background-color: red;
+    }
+    .trichy {
+      top: 50%;
+      left: 45%;
+    }
+    .Thiruvannamalai {
+      top: 20%;
+      left: 55%;
+    }
+    .Sivagangai {
+      top: 65%;
+      left: 45%;
+    }
+    .tooltip {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      white-space: nowrap;
+      transform: translate(-50%, -150%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+    }
+    .location:hover .tooltip {
+      opacity: 1;
+    }
+    .tooltip a {
+      color: white;
+      text-decoration: none;
+    }
+    .tooltip a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1></h1>
+  <h1>Tamil Nadu Map</h1>
+  <div class="map-container">
+    <img src="https://i.pinimg.com/736x/3e/eb/5d/3eeb5dc79c11924292abdd591df0e9de.jpg" alt="Tamil Nadu Map" height="700px">
+
+    <a href="https://en.wikipedia.org/wiki/Tiruchirappalli" target="_blank">
+      <div class="location trichy">
+        <span class="tooltip">Trichy</span>
+      </div>
+    </a>
+
+    <a href="https://en.wikipedia.org/wiki/Thiruvannamalai" target="_blank">
+      <div class="location Thiruvannamalai">
+        <span class="tooltip">Thiruvannamalai</span>
+      </div>
+    </a>
+
+    <a href="https://en.wikipedia.org/wiki/Sivaganga" target="_blank">
+      <div class="location Sivagangai">
+        <span class="tooltip">Sivagangai</span>
+      </div>
+    </a>
+  </div>
+</body>
+</html>

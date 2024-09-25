@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Profile</title>
+    <link rel="stylesheet" href="media.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        #container {
+            display: flex;
+            align-items: center;
+            max-width: 650px;
+            width: 100%;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        #profile {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            border-right: 1px solid #ddd;
+        }
+        #post {
+            width: 400px; /* Adjust as needed */
+            padding: 20px;
+            text-align: left;
+        }
+        img {
+            background-color: brown;
+            border-radius: 50%; /* Circular image */
+            object-fit: cover;
+            width: 150px; /* Adjust as needed */
+            height: 150px; /* Adjust as needed */
+            border: 3px solid #007bff; /* Optional border */
+        }
+        h1 {
+            margin: 10px 0;
+            color: #333;
+            font-size: 24px;
+        }
+        #time {
+            margin: 10px 0;
+            color: #666;
+            font-size: 18px;
+        }
+        .follow-btn {
+            background-color: #007bff; /* Blue background */
+            color: #fff; /* White text */
+            border: none;
+            border-radius: 25px; /* Rounded corners */
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+        .follow-btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            transform: scale(1.05); /* Slightly enlarge button on hover */
+        }
+        .follow-btn:active {
+            background-color: #004080; /* Even darker blue on click */
+            transform: scale(0.95); /* Slightly shrink button on click */
+        }
+        .follow-btn:focus {
+            outline: none; /* Remove default focus outline */
+        }
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .stat {
+            text-align: center;
+        }
+        .stat h2 {
+            color: #007bff;
+            font-size: 22px;
+        }
+        .stat p {
+            margin: 5px 0;
+            color: #333;
+        }
+        .post {
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .post h3 {
+            margin-bottom: 10px;
+            color: #007bff;
+            font-size: 20px;
+        }
+        .post p {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .post .timestamp {
+            color: #666;
+            font-size: 14px;
+        }
+        .name{
+            color: #314e6c;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="profile">
+            <div id="imagecontainer">
+                <img id="profileimg" src="image1.jpg" alt="Profile image of Cillian Murphy">
+                <h1>Cillian Murphy</h1>
+                <div id="time"></div>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <h2>1</h2>
+                    <p>Posts</p>
+                </div>
+                <div class="stat">
+                    <h2>144</h2>
+                    <p>Followers</p>
+                </div>
+                <div class="stat">
+                    <h2>514</h2>
+                    <p>Following</p>
+                </div>
+                
+            </div>
+            <button class="follow-btn">Follow</button>
+        </div>
+        <div id="post">
+            <div class="name">
+                <h2>Post</h2>
+            </div>
+            <div class="post">
+                <h3>Vacation</h3>
+                <p>Enjoying a family getaway in the enchanting city of Paris. 🗼❤️
+                    From charming streets to unforgettable moments—every day’s a new adventure.
+                    Feeling grateful for these special times together.</p>
+                <p class="timestamp">
+                    <a href="#" target="_blank">#Paris</a> 
+                    <a href="#" target="_blank">#FamilyTime</a>
+                </p>
+                <p class="timestamp">Posted on: September 4, 2024</p>
+            </div>
+        </div>
+    </div>
+    <script src="page.js"></script>
+</body>
+</html>
