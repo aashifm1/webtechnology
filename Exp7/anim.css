@@ -1,0 +1,36 @@
+body {
+    background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#change {
+    position: relative;
+    overflow: hidden;
+    width: 500px; 
+    height: 300px; 
+}
+
+#pro-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: opacity 1s ease-in-out;  
+}
+
+#time {
+    margin-top: 20px;
+    font-size: 24px;
+    color: black; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
