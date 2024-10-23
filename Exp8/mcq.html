@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <h2>Online Quiz</h2>
+    <div class="container">
+        <form id="quiz-form">
+            <div class="question">
+                <h4>Question 1</h4>
+                <p>Who is the greatest of all time?</p>
+                <label><input type="radio" name="ques1" value="a"> A. Cristiano</label><br>
+            </div>
+            <div class="question">
+                <h4>Question 2</h4>
+                <p>Who is the best midfielder?</p>
+                <label><input type="radio" name="ques2" value="a"> A. Luka Modric</label><br>
+                <label><input type="radio" name="ques2" value="b"> B. Toni Kroos</label><br>
+                <label><input type="radio" name="ques2" value="c"> C. Xavi</label><br>
+                <label><input type="radio" name="ques2" value="d"> D. Andres Iniesta</label>
+            </div>
+            <div class="question">
+                <h4>Question 3</h4>
+                <p>Who is the best goalkeeper?</p>
+                <label><input type="radio" name="ques3" value="a"> A. Oliver Kahn</label><br>
+                <label><input type="radio" name="ques3" value="b"> B. Iker Casillas</label><br>
+                <label><input type="radio" name="ques3" value="c"> C. George Kobel</label><br>
+                <label><input type="radio" name="ques3" value="d"> D. Peter Cech</label>
+            </div>
+            <div class="question">
+                <h4>Question 4</h4>
+                <p>Who is the best defender?</p>
+                <label><input type="radio" name="ques4" value="a"> A. Paolo Maldini</label><br>
+                <label><input type="radio" name="ques4" value="b"> B. Franz Beckenbauer</label><br>
+                <label><input type="radio" name="ques4" value="c"> C. Carlos Puyol</label><br>
+                <label><input type="radio" name="ques4" value="d"> D. Sergio Ramos</label>
+            </div>
+            <button type="button" id="clear-btn">Clear Form</button>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
